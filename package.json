@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-scss": "node-sass --include-path scss scss/main.scss css/main.css",
+    "build-scss": "sass --load-path=scss scss/main.scss css/main.css",
     "watch-scss": "nodemon -e scss -x \"npm run build-scss\""
   },
   "repository": {
@@ -20,10 +20,9 @@
   "homepage": "https://github.com/dsmolyak/dsmolyak.github.io#readme",
   "dependencies": {
     "kind-of": "^6.0.3",
-    "minimist": "^1.2.5",
-    "node-sass": "^4.14.1",
-    "nodemon": "^2.0.4",
-    "sass": "^1.23.3",
+    "minimist": "^1.2.8",
+    "nodemon": "^3.1.14",
+    "sass": "^1.93.2",
     "scss": "^0.2.4"
   },
   "overrides": {
